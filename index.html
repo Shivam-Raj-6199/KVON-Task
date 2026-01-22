@@ -17,9 +17,10 @@
 
     <header>
         <h1>Lorem ipsum dolor sit.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque sapiente iusto voluptate unde esse
-            ut laborum a, mollitia quo accusantium, hic, sequi obcaecati necessitatibus perferendis! Id minus quas
-            debitis.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque sapiente iusto voluptate unde esse
+            ut laborum a, mollitia quo accusantium.
+        </p>
     </header>
 
     <img src="IMG_7567.JPG" alt="Sample Image" width="300">
@@ -85,12 +86,21 @@
             <input type="number">
 
             <p>Gender</p>
-            <input type="radio" name="g"> Male
-            <input type="radio" name="g"> Female
 
-            <p>
-                <input type="checkbox"> I am 18+
-            </p>
+            <label class="control">
+                <input type="radio" name="g">
+                <span>Male</span>
+            </label>
+
+            <label class="control">
+                <input type="radio" name="g">
+                <span>Female</span>
+            </label>
+
+            <label class="control">
+                <input type="checkbox">
+                <span>I am 18+</span>
+            </label>
 
             <textarea rows="4" placeholder="Write something..."></textarea>
 
