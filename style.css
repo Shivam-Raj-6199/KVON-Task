@@ -6,16 +6,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    padding: 20px;
     color: #333;
+    padding: 20px;
+
+    background-image: url("IMG_7567.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #nav {
-    background: #222;
+    background: rgba(0, 0, 0, 0.8);
     padding: 12px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 6px;
+    margin-bottom: 25px;
 }
 
 #nav a {
@@ -24,37 +30,44 @@ body {
     margin: 0 12px;
 }
 
-header, section, table {
-    background: white;
+header,
+section,
+table,
+footer {
+    background: rgba(255, 255, 255, 0.377);
+    max-width: 900px;
     margin: 25px auto;
     padding: 20px;
-    max-width: 900px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 header {
     text-align: center;
 }
 
-img, video, audio {
+img,
+video,
+audio {
     display: block;
     margin: 15px auto;
     max-width: 100%;
 }
 
+ul,
+ol {
+    margin-left: 25px;
+}
+
 table {
+    width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-}
-
-th {
-    background: #667eea;
-    color: white;
 }
 
 form {
@@ -62,17 +75,26 @@ form {
     margin: auto;
 }
 
-input, textarea {
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
 }
 
 button {
-    background: #667eea;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 8px 15px;
     cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
 }
