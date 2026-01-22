@@ -8,7 +8,6 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     padding: 20px;
-
     background-image: url("IMG_7567.JPG");
     background-size: cover;
     background-position: center;
@@ -34,10 +33,12 @@ header,
 section,
 table,
 footer {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.6);
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 6px;
 }
-
 
 header {
     text-align: center;
@@ -47,7 +48,7 @@ img,
 video,
 audio {
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;
     max-width: 100%;
 }
 
@@ -85,14 +86,30 @@ textarea {
     margin-top: 5px;
 }
 
+.control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.control input {
+    width: auto;
+}
+
 button {
-    margin-top: 15px;
-    padding: 8px 15px;
+    display: block;
+    margin: 20px auto;
+    padding: 8px 20px;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: #444;
+}
+
+footer p {
+    margin: 4px 0;
 }
